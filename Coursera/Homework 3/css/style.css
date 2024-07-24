@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(0, 163, 181);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  }
+  
+  #container {
+    border: solid white 15px;
+    border-radius: 10px;
+    margin: 20px;
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 238), rgb(18, 149, 255));
+    padding: 20px;
+  }
+  
+  section img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;    
+    border: 10px solid black;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    text-shadow: 3px 3px 4px white;
+  }
+  
+  .dashed-border {
+    border: dashed 3px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgb(0, 136, 255), rgb(0, 225, 255));
+  }
+  
+  p {
+    font-size: 1.3em;
+  }
+  
+  .sub-sec {
+    background-image: linear-gradient(to right, rgb(112, 217, 255), rgb(43, 255, 244));
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  li {
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px white;
+  }
+  
+  a {
+    color: black;    
+    font-size: 1.3em;
+  }
+  
+  footer a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 5px solid rgb(157, 38, 255);
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgb(204, 0, 255);
+    text-decoration: none;
+    padding: 10px;
+    transition: all;
+    transition-duration: 0.3s;
+  }
+  
+  #back-top-button:hover {
+    background-color: rgb(227, 114, 255);
+    border: 5px solid rgb(194, 120, 255);    
+    color: rgb(211, 211, 211);
+  }
+  
+  #back-top-button:active {
+    border: 5px solid rgb(94, 22, 153);
+    background-color: rgb(119, 0, 148);
+    color: rgb(0, 0, 0);
+  }
+  
+  #skip {
+    position: absolute;
+    top: -100px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    background-color: white;
+  }
+  
+  #skip:focus {
+    top: 60px;
+    left: 60px;
+  }
+  
+  ul#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  
+  ul a {
+    text-decoration: none;
+  }
+  
+  #sbu {
+    background-image: linear-gradient(to right, rgb(255, 79, 79), rgb(146, 0, 0));
+    padding: 15px;    
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px white;
+    display: inline-block;
+  }
+  
+  #bing {
+    background-image: linear-gradient(to right, rgb(73, 255, 73), rgb(0, 121, 0));
+    padding: 15px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px white;
+    display: inline-block;
+  }
+  
+  #bing:hover {
+    border: 3px solid black;
+    background-image: url(../images/bing\ logo.png);
+    width: 270px;
+    height: 270px;
+    background-repeat: no-repeat;
+  }
+  
+  #sbu:hover {
+    border: 3px solid black;
+    background-image: url(../images/sbu\ logo.png);
+    background-repeat: no-repeat;
+    width: 273px;
+    height: 172px;
+  }
+  
+  #ub {
+    background-image: linear-gradient(to right, rgb(73, 231, 255), rgb(33, 138, 251));
+    padding: 15px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px white;    
+    transition-duration: 0.3s;
+    display: inline-block;
+    background-color: white;
+  }
+  
+  #ub:hover, a#ub:hover {
+    border: 3px solid black;
+    background-image: url(../images/ubpic.jpg);
+    width: 240px;    
+    background-repeat: no-repeat;
+    height: 240px;
+  }
+  
+  
+  
+  
+  

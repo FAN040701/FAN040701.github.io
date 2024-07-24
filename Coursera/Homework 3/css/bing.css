@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+  }
+  
+  #container {
+    border: solid green 15px;
+    border-radius: 10px;
+    margin: 20px;
+    background-image: linear-gradient(to bottom right, rgb(177, 255, 171), rgb(42, 208, 27));
+    padding: 20px;
+    background-image: url(../images/green.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .dotted-border {
+    border: dotted 5px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgb(0, 155, 26), rgb(107, 255, 97));
+  }
+  
+  .sub-sec {
+    background-image: linear-gradient(to right, rgb(32, 216, 130), rgb(112, 244, 51));
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  header h1 {
+    color: rgb(73, 255, 107);
+    text-shadow: 2px 2px 2px rgb(101, 255, 74);
+  }
+  
+  p {
+    color: rgb(91, 255, 91);
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  li {
+    color: rgb(91, 255, 91);
+    text-shadow: 2px 2px 2px black;
+  
+  }
+  
+  section img {
+    border-color: rgb(26, 188, 123);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  
+  

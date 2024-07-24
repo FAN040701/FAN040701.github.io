@@ -1,0 +1,81 @@
+header h1 {
+    color: #5A1616;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  h2 {
+    border: 3px solid white;
+  }
+  
+  .border-sbu {
+    background-color: rgb(196, 196, 196);
+    border-color: rgb(255, 91, 91);
+    border-left: 20px solid rgb(255, 91, 91);
+    color: rgb(190, 4, 4);
+    border-right: 20px solid rgb(255, 91, 91);
+    text-shadow: 2px 2px 2px rgb(255, 91, 91);
+    padding: 10px;
+    border-top: solid 10px rgb(255, 91, 91);
+    border-bottom: solid 10px rgb(255, 91, 91);
+  }
+  
+  #container {
+    background-image: url(../images/red.jpg);
+    border-color: rgb(114, 31, 31);
+    border-style: dashed;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 104, 104);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .sub-sec {
+    background-image: linear-gradient(to right, rgb(255, 131, 131), rgb(246, 255, 73));
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.8em;
+  }
+  
+  .sub-sec a {
+    color: red;
+    font-size: 1em;
+  }
+  
+  section li {
+    color: rgb(242, 255, 58);
+    text-shadow: 2px 2px 2px black;
+    background-color: #5C0000;
+  }
+  
+  ul {
+    list-style-image: url(../images/red\ star.png);
+  }
+  
+  p {
+    color: rgb(242, 255, 58);
+    text-shadow: 2px 2px 2px black;
+    background-color: #5C0000;
+  }
+  
+  section img {
+    border-color: rgb(179, 0, 0);
+    width: 30%;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  img:nth-child(1), img:nth-child(4) {
+    border-style: dashed;
+  }
+  
+  img:nth-child(3), img:nth-child(5) {
+    border-style: dotted;
+  }
+  
+  
+  
+  
+  
