@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "Hong Kong"
-title                    : "Wang Qifan Blog"
+title                    : "Wang Qifan"
 title_separator          : "-"
 name                     : &name "Wang Qifan"
 description              : &description "personal description"
