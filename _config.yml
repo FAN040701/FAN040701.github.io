@@ -12,7 +12,7 @@ title                    : "Wang Qifan"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : https://FAN040701.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+URL                      : "https://FAN040701.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "FAN040701/FAN040701.github.io"
 
