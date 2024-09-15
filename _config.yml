@@ -22,10 +22,10 @@ repository               : "FAN040701/FAN040701.github.io"
 author:
   # Biographic information
   avatar           : "seaside.png"
-  name             : "Your Sidebar Name"
+  name             : "Wang Qifan"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  location         : "Hong Kong"
   employer         : "Red Brick University"
   uri              : # URL
   email            : "none@example.org" 
