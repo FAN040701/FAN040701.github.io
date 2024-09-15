@@ -7,10 +7,10 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-title                    : "Wang Qifan"
+locale                   : "Hong Kong"
+title                    : "Wang Qifan Blog"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Wang Qifan"
 description              : &description "personal description"
 URL                      : "https://FAN040701.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
