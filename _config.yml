@@ -1,7 +1,7 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-url: https://wangqifan.com
+url: https://fan040701.github.io
 baseurl: ""
 
 collections:
