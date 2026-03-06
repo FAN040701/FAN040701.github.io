@@ -1,61 +1,37 @@
 experiences:
 
-- place: "University of Washington"
-  time: "2023 - now"
-  title: "Assistant Professor"
-  subtitle: "Information School"
+- place: "HKU School of Computing and Data Science"
+  time: "Summer 2025"
+  title: "HKU CDS Summer Research Internship Program"
+  subtitle: "HKU MedAI Lab"
   category: "work"
 
-- place: "Stanford"
-  time: "2020 - 2023"
-  title: "Postdoc"
-  subtitle: "MS&E"
+- place: "Beijing COSINX Limited"        # 修改为你的工作单位
+  time: "2024 Dec - 2025 Jun"               # 修改为时间段
+  title: "LLM Intern"          # 修改为你的职位
+  subtitle: "Research And Development Department"      # 修改为所属部门
   category: "work"
 
-- place: "MIT"
-  time: "2014 - 2020"
-  title: "Ph.D. Student"
-  subtitle: "Media Lab, Laboratory for Social Machines"
+- place: "Nanyang Technological University (NTU)"
+  time: "2024 Aug - 2024 Dec"
+  title: "Exchange Student"
+  subtitle: "Computer Science"
   category: "school"
 
-- place: "Facebook"
-  time: "Summer 2019"
-  title: "Research Scientist, Intern"
-  subtitle: "Core Data Science"
+- place: "Guangzhou GIICS"
+  time: "Summer 2024"
+  title: "Intern"
+  subtitle: "FDSOI Core Chip and Special IP Center"
   category: "work"
 
-- place: "LinkedIn"
-  time: "Summer 2016"
-  title: "Research Scientist, Intern"
-  subtitle: "Experimentation Group"
-  category: "work"
-
-- place: "Amazon"
-  time: "Summer 2014"
-  title: "Machine Learning Scientist, Intern"
-  subtitle: "Scalable Machine Learning Group"
-  category: "work"
-
-- place: "Yahoo! Labs"
-  time: "Feb-Aug 2013"
-  title: "Research Scientist, Intern"
-  subtitle: "Social Media Engagement Group"
-  category: "work"
-
-- place: "EM-DMKM"
-  time: "Sep 2011 – Aug 2013"
-  title: "M.Sc. Student"
-  subtitle: "Masters in Data Mining and Knowledge Management <br/> Year 1: University Pierre et Marie Curie <br/> Year 2: Universitat Politecnica de Catalunya <br/>"
+- place: "Peking University (PKU)"  
+  time: "2023 Jul - 2023 Aug"
+  title: "Summer School"               # 修改为学历
+  # subtitle: "计算机科学与技术"       # 修改为专业
   category: "school"
 
-- place: "Jozef Stefan Institute"
-  time: "Jan-Aug 2011"
-  title: "Research Assistant"
-  subtitle: "Department of Knowledge Technologies"
-  category: "work"
-
-- place: "Staffordshire University"
-  time: "2007 - 2010"
-  title: "B.Sc. Student"
-  subtitle: "Computing Science <br/> First Class Honours"
+- place: "The University of Hong Kong (HKU)"
+  time: "2022 Sept - 2026 Jun"
+  title: "BEng. Student"
+  subtitle: "Computer Engineering <br/> First Class Honours"
   category: "school"

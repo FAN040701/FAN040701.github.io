@@ -1,7 +1,7 @@
 h4 {
   letter-spacing: .1rem; }
 .container {
-  max-width: 800px; }
+  max-width: 1000px; }
 .header {
   margin-top: 60px;
   margin-bottom: 60px; 
@@ -19,6 +19,10 @@ h4 {
   /*text-transform: uppercase; */}
 .paper p {
   margin-bottom: 2px }
+#publications sup.corresponding-author {
+  font-size: 1em;
+  font-weight: 700;
+}
 .paper-buttons {
   margin-top: 5px }
 .paper .button {
@@ -37,6 +41,23 @@ h4 {
   border-top: 1px solid #eee;
   padding: 4rem 0;
   margin-bottom: 0;}
+#service {
+  padding-bottom: 1.8rem;
+}
+#service p {
+  margin-bottom: 0.8rem;
+}
+#service p b {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+#service ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+#service ul:last-child {
+  margin-bottom: 0;
+}
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);

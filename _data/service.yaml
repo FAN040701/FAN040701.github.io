@@ -1,0 +1,21 @@
+teaching:
+  # Example 1: structured fields
+  - role: "Teaching Assistant"
+    course: "ENGG1330: Computer Programming I"
+    institution: "The University of Hong Kong"
+    term: "2024 Spring"
+
+  - role: "Teaching Assistant"
+    course: "ENGG1340/COMP2113: Computer Programming II"
+    institution: "The University of Hong Kong"
+    term: "2025 Spring"
+
+# reviewer:
+#   # Example 1: structured fields
+#   - venue: "NeurIPS"
+#     year: 2026
+
+#   # Example 2: add note (optional)
+#   - venue: "Journal Name"
+#     year: 2026
+#     note: "Reviewer"

@@ -1,10 +1,13 @@
-name: "Martin Saveski"
-title: "Assistant Professor, University of Washington"
-email: "msaveski [AT] uw.edu"
-profile_pic: "/assets/profile-pics/SU_small.jpg"
-bsky: "https://bsky.app/profile/msaveski.bsky.social"
-twitter: "https://twitter.com/msaveski"
-linkedin: "https://www.linkedin.com/in/msaveski"
-github: "https://github.com/msaveski"
-google_scholar: "https://scholar.google.com/citations?user=M3D870YAAAAJ&hl=en"
-google_analystics_tracking_id: 'UA-46778883-1'
+name: "Qifan Wang"  # 修改为你的姓名
+title: "<span style='font-family: &quot;SJxingkai-C&quot;, &quot;三极行楷简体-粗&quot;, &quot;行楷-简&quot;, &quot;STXingkaiSC-Light&quot;, &quot;STXingkaiSC-Bold&quot;, cursive; font-size: 2.4em; line-height: 1;'>王启帆</span>"
+email: "BEng student [AT] HKU<br/>Department of Electrical and Computer Engineering<br/>wqf040701@connect.hku.hk<br/>qifanwang66666@gmail.com"  # 修改为你的邮箱，使用 <br/> 换行
+profile_pic: "/assets/profile-pics/profile.jpg"  # 修改为你的头像路径
+
+
+# bsky: "https://bsky.app/profile/yourhandle.bsky.social"  # 修改或删除
+# twitter: "https://twitter.com/yourhandle"  # 修改为你的 Twitter
+linkedin: "https://www.linkedin.com/in/qifanwang20040701/"  # 修改为你的 LinkedIn
+github: "https://github.com/FAN040701"  # 修改为你的 GitHub
+wechat: "assets/profile-pics/WeChat.jpg"  # 点击微信图标后打开你的二维码图片
+google_scholar: "https://scholar.google.com/citations?user=S0erJ7kAAAAJ&hl=zh-CN"  # 修改为你的 Google Scholar
+# google_analystics_tracking_id: ''  # 填入你的 Google Analytics ID（可选）
