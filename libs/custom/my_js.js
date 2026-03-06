@@ -23,7 +23,51 @@ $(document).ready(function() {
     $popoverLink.on('click', openPopover)
     $document.on('click', closePopover)
     $('a[href^="#"]').on('click', smoothScroll)
+    initDragScroll()
     buildSnippets();
+  }
+
+  function initDragScroll() {
+    $('.drag-scroll').each(function() {
+      var $el = $(this),
+          isDragging = false,
+          hasMoved = false,
+          startY = 0,
+          startScrollTop = 0;
+
+      $el.on('mousedown', function(e) {
+        isDragging = true;
+        hasMoved = false;
+        startY = e.pageY;
+        startScrollTop = this.scrollTop;
+        $el.addClass('dragging');
+        e.preventDefault();
+      });
+
+      $el.on('mousemove', function(e) {
+        var deltaY;
+        if(!isDragging) {
+          return;
+        }
+        deltaY = e.pageY - startY;
+        if(Math.abs(deltaY) > 2) {
+          hasMoved = true;
+        }
+        this.scrollTop = startScrollTop - deltaY;
+      });
+
+      $el.on('mouseup mouseleave', function() {
+        isDragging = false;
+        $el.removeClass('dragging');
+      });
+
+      $el.on('click', 'a', function(e) {
+        if(hasMoved) {
+          e.preventDefault();
+          hasMoved = false;
+        }
+      });
+    });
   }
 
   function smoothScroll(e) {

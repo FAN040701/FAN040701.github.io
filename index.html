@@ -15,6 +15,32 @@ title: Home
   </p>
 </div>
 
+<div class="docs-section" id="news">
+  <h4>News</h4>
+  <p class="news-hint">Drag inside the panel to scroll.</p>
+
+  {% assign news_items = site.data.news.news %}
+  <div class="news-scroll-box drag-scroll" aria-label="News list">
+    {% if news_items and news_items.size > 0 %}
+      {% for item in news_items %}
+        <div class="news-item">
+          <span class="news-date">{{ item.date }}</span>
+          <span class="news-text">
+            {{ item.text }}
+            {% if item.link %}
+              <a href="{{ item.link }}" target="_blank">{{ item.link_text | default: "Link" }}</a>
+            {% endif %}
+          </span>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="news-item">
+        <span class="news-text">No news yet.</span>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
 

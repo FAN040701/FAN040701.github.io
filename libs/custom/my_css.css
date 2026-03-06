@@ -58,6 +58,43 @@ h4 {
 #service ul:last-child {
   margin-bottom: 0;
 }
+#news {
+  padding-bottom: 2.2rem;
+}
+#news .news-hint {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+#news .news-scroll-box {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: grab;
+}
+#news .news-scroll-box.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+#news .news-item {
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed #efefef;
+}
+#news .news-item:last-child {
+  border-bottom: none;
+}
+#news .news-date {
+  display: inline-block;
+  min-width: 92px;
+  margin-right: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+#news .news-text {
+  color: #222;
+}
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
