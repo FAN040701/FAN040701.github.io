@@ -171,9 +171,10 @@ h4 {
     content: "";
     position: absolute;
     left: 0;
-    top: 1.9rem;
+    top: 50%;
+    transform: translateY(-50%);
     width: 1px;
-    height: 2.7rem;
+    height: 2.1rem;
     background: rgba(0, 0, 0, 0.28);
   }
   .navbar-link {
