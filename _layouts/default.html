@@ -18,6 +18,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    (function() {
+      var storageKey = 'site-theme';
+      var savedTheme;
+      var theme;
+      try {
+        savedTheme = localStorage.getItem(storageKey);
+      } catch (err) {
+        savedTheme = null;
+      }
+      theme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
@@ -62,6 +77,11 @@
 
 </head>
 <body>
+
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+    <span class="theme-toggle-sun" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-toggle-moon" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+  </button>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

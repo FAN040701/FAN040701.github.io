@@ -25,7 +25,53 @@ $(document).ready(function() {
     $document.on('click', closePopover)
     $('a[href^="#"]').on('click', smoothScroll)
     initDragScroll()
+    initThemeToggle()
     buildSnippets();
+  }
+
+  function initThemeToggle() {
+    var storageKey = 'site-theme',
+        $toggle = $('#theme-toggle'),
+        root = document.documentElement,
+        savedTheme = null,
+        hasSavedTheme = false,
+        activeTheme = 'light',
+        nextTheme,
+        label;
+
+    if(!$toggle.length) {
+      return;
+    }
+
+    try {
+      savedTheme = localStorage.getItem(storageKey);
+      hasSavedTheme = savedTheme === 'dark' || savedTheme === 'light';
+    } catch (err) {
+      hasSavedTheme = false;
+    }
+
+    activeTheme = hasSavedTheme ? savedTheme : 'light';
+
+    function applyTheme(theme) {
+      label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+      root.setAttribute('data-theme', theme);
+      $toggle.attr('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      $toggle.attr('aria-label', label);
+      $toggle.attr('title', label);
+    }
+
+    applyTheme(activeTheme);
+
+    $toggle.on('click', function() {
+      nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
+      try {
+        localStorage.setItem(storageKey, nextTheme);
+      } catch (err) {
+        return;
+      }
+    });
+
   }
 
   function initDragScroll() {
