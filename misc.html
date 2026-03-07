@@ -5,5 +5,30 @@ title: Misc
 
 <div class="docs-section" id="misc">
   <h4>Misc</h4>
-  <p>Personal notes, useful links, and random things worth sharing.</p>
+
+  {% assign misc_sections = site.data_misc | sort: "section_order" %}
+  {% if misc_sections and misc_sections.size > 0 %}
+    {% for section in misc_sections %}
+      <div class="misc-subsection">
+        <h5>{{ section.section_title }}</h5>
+
+        {% if section.paragraphs %}
+          {% for paragraph in section.paragraphs %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+        {% endif %}
+
+        {% if section.points %}
+          <ul>
+            {% for point in section.points %}
+              <li>{{ point }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <h5>More Bio</h5>
+    <p>Add data files under <code>_data_misc</code> to populate this page.</p>
+  {% endif %}
 </div>

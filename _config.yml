@@ -7,3 +7,5 @@ baseurl: ""
 collections:
   projects:
     output: true
+  data_misc:
+    output: false
