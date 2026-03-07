@@ -39,8 +39,11 @@ h4 {
   font-weight: 600; }
 .docs-section {
   border-top: 1px solid #eee;
-  padding: 4rem 0;
+  padding: 4rem 0 1.8rem;
   margin-bottom: 0;}
+.docs-section > :last-child {
+  margin-bottom: 0;
+}
 #service {
   padding-bottom: 1.8rem;
 }
@@ -59,7 +62,7 @@ h4 {
   margin-bottom: 0;
 }
 #news {
-  padding-bottom: 2.2rem;
+  padding-bottom: 1.8rem;
 }
 #news .news-hint {
   margin-bottom: 0.8rem;
