@@ -129,7 +129,7 @@ title: Home
 </div>
 
 <div class="docs-section" id="awards">
-  <h4>Awards</h4>
+  <h4>Honors & Awards</h4>
 
   {% assign award_items = site.data.awards.awards %}
   {% if award_items and award_items.size > 0 %}
@@ -139,7 +139,7 @@ title: Home
           {% if item.text %}
             {{ item.text }}
           {% else %}
-            {% if item.date %}{{ item.date }}{% endif %}{% if item.date and item.title %}: {% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
+            {% if item.date %}<strong>{{ item.date }}</strong>{% endif %}{% if item.date and item.title %}: {% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
           {% endif %}
         </li>
       {% endfor %}
