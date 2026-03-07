@@ -128,6 +128,27 @@ title: Home
   </div>
 </div>
 
+<div class="docs-section" id="awards">
+  <h4>Awards</h4>
+
+  {% assign award_items = site.data.awards.awards %}
+  {% if award_items and award_items.size > 0 %}
+    <ul>
+      {% for item in award_items %}
+        <li>
+          {% if item.text %}
+            {{ item.text }}
+          {% else %}
+            {% if item.date %}{{ item.date }}{% endif %}{% if item.date and item.title %}: {% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Awards will be updated soon.</p>
+  {% endif %}
+</div>
+
 <div class="docs-section" id="service">
   <h4>Service</h4>
 
