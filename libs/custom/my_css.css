@@ -98,6 +98,15 @@ h4 {
 #news .news-text {
   color: #222;
 }
+#misc .misc-subsection p:last-of-type {
+  margin-bottom: 0.6rem;
+}
+#misc .misc-subsection ul {
+  margin-top: 0;
+}
+.cn-xingkai {
+  font-family: "SJxingkai-C", "三极行楷简体-粗", "行楷-简", "STXingkaiSC-Light", "STXingkaiSC-Bold", cursive;
+}
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
