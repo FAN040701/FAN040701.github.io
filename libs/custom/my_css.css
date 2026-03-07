@@ -167,6 +167,102 @@ h4 {
 #news .news-text {
   color: #222;
 }
+#awards .awards-more-toggle-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+#awards > ul {
+  margin-bottom: 0.35rem;
+}
+#awards > ul > li:last-child {
+  margin-bottom: 0;
+}
+#awards .awards-more-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 0 0 0.6rem;
+}
+#awards .awards-more-lead {
+  margin: 0;
+  flex: 1;
+  color: rgba(0, 0, 0, 0.7);
+}
+#awards .awards-more-toggle {
+  width: 2.15rem;
+  height: 2.15rem;
+  flex: 0 0 2.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #222;
+  background: rgba(0, 0, 0, 0.025);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#awards .awards-more-toggle:hover {
+  background: rgba(0, 0, 0, 0.055);
+  border-color: rgba(0, 0, 0, 0.24);
+}
+#awards .awards-more-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(51, 195, 240, 0.22);
+}
+#awards .awards-more-toggle-input:checked + .awards-more-trigger .awards-more-toggle {
+  background: rgba(0, 0, 0, 0.075);
+  border-color: rgba(0, 0, 0, 0.28);
+}
+#awards .awards-more-toggle-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+#awards .awards-more-toggle-input:checked + .awards-more-trigger .awards-more-toggle-icon {
+  transform: rotate(90deg);
+}
+#awards .awards-more-toggle-icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+#awards .awards-more-toggle-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#awards .awards-more-panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  transition: max-height 0.26s ease, opacity 0.2s ease, margin-top 0.2s ease;
+}
+#awards .awards-more-toggle-input:checked + .awards-more-trigger + .awards-more-panel {
+  max-height: 1200px;
+  opacity: 1;
+  margin-top: 0.2rem;
+}
+#awards .awards-more-panel ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#awards .awards-more-empty {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
 #misc .misc-subsection > p:last-of-type {
   margin-bottom: 0.6rem;
 }
@@ -522,6 +618,30 @@ html[data-theme="dark"] #news .news-item {
 html[data-theme="dark"] #news .news-date,
 html[data-theme="dark"] #news .news-text {
   color: #e6edf5;
+}
+
+html[data-theme="dark"] #awards .awards-more-lead {
+  color: rgba(230, 237, 245, 0.78);
+}
+
+html[data-theme="dark"] #awards .awards-more-toggle {
+  color: #e6edf5;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(230, 237, 245, 0.32);
+}
+
+html[data-theme="dark"] #awards .awards-more-toggle:hover {
+  background: rgba(255, 255, 255, 0.11);
+  border-color: rgba(230, 237, 245, 0.46);
+}
+
+html[data-theme="dark"] #awards .awards-more-toggle-input:checked + .awards-more-trigger .awards-more-toggle {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(230, 237, 245, 0.52);
+}
+
+html[data-theme="dark"] #awards .awards-more-empty {
+  color: rgba(230, 237, 245, 0.72);
 }
 
 html[data-theme="dark"] #misc .misc-subsection + .misc-subsection {

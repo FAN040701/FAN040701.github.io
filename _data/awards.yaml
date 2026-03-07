@@ -14,3 +14,9 @@ awards:
   - date: "2024 Apr"
     title: "Talent Development Scholarship"
     org: "Hong Kong Special Administrative Region Government Scholarship Fund"
+
+awards_hidden:
+  # Add extra awards here. They will be collapsed by default and shown when expanded.
+  # - date: "2026 Jan"
+  #   title: "Your extra award title"
+  #   org: "Organization"

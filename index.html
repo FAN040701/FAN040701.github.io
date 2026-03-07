@@ -147,6 +147,42 @@ title: Home
   {% else %}
     <p>Awards will be updated soon.</p>
   {% endif %}
+
+  {% assign award_hidden_items = site.data.awards.awards_hidden %}
+  <input class="awards-more-toggle-input" type="checkbox" id="awards-more-toggle">
+  <div class="awards-more-trigger">
+    <p class="awards-more-lead">More honors and awards</p>
+    <label
+      class="awards-more-toggle"
+      for="awards-more-toggle"
+      aria-label="Expand or collapse additional awards"
+      title="Expand or collapse additional awards"
+    >
+      <span class="awards-more-toggle-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M9 6l6 6-6 6"></path>
+        </svg>
+      </span>
+    </label>
+  </div>
+
+  <div class="awards-more-panel">
+    {% if award_hidden_items and award_hidden_items.size > 0 %}
+      <ul>
+        {% for item in award_hidden_items %}
+          <li>
+            {% if item.text %}
+              {{ item.text }}
+            {% else %}
+              {% if item.date %}<strong>{{ item.date }}</strong>{% endif %}{% if item.date and item.title %}: {% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="awards-more-empty">No additional awards yet.</p>
+    {% endif %}
+  </div>
 </div>
 
 <div class="docs-section" id="service">
