@@ -14,7 +14,7 @@ papers:
     authors: "Yushi Feng<sup>‡</sup>, <b>Qifan Wang<sup>‡</sup></b>, Wang lujing, Liang Peng, Xinxiang Zhao, Qian Niu, Lequan Yu<sup class='corresponding-author'>*</sup>"
     venue: "(Under Review) ICML 2026"
     # paper_pdf: "/assets/publications/paper3/paper.pdf"
-    preview_image: "/assets/publications/RadPro.png"
+    preview_image: "/assets/publications/Radpro.png"
     # poster: "/assets/publications/paper3/poster.pdf" 
     # code: "https://github.com/StanfordHCI/FeedMonitor"
     selected: y
