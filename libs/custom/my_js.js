@@ -6,7 +6,7 @@ $(document).ready(function() {
       $body = $('body'),
       $window = $(window),
       $popoverLink = $('[data-popover]'),
-      navOffsetTop = $nav.offset().top,
+      navOffsetTop = 0,
       $document = $(document),
       entityMap = {
         "&": "&amp;",
@@ -18,6 +18,7 @@ $(document).ready(function() {
       }
 
   function init() {
+    navOffsetTop = getNavOffsetTop()
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
     $popoverLink.on('click', openPopover)
@@ -106,8 +107,17 @@ $(document).ready(function() {
 
   function resize() {
     $body.removeClass('has-docked-nav')
-    navOffsetTop = $nav.offset().top
+    navOffsetTop = getNavOffsetTop()
     onScroll()
+  }
+
+  function getNavOffsetTop() {
+    var navOffset;
+    if(!$nav.length) {
+      return 0;
+    }
+    navOffset = $nav.offset();
+    return navOffset ? navOffset.top : 0;
   }
 
   function onScroll() {

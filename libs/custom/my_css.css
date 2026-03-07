@@ -98,11 +98,107 @@ h4 {
 #news .news-text {
   color: #222;
 }
-#misc .misc-subsection p:last-of-type {
+#misc .misc-subsection > p:last-of-type {
   margin-bottom: 0.6rem;
+}
+#misc .misc-subsection {
+  margin-bottom: 0;
+}
+#misc .misc-subsection + .misc-subsection {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+}
+#misc .misc-subsection:last-child {
+  margin-bottom: 0;
+}
+#misc .misc-points-toggle-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+#misc .misc-points-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 0 0 0.6rem;
+}
+#misc .misc-points-trigger .misc-points-lead {
+  margin: 0;
+  flex: 1;
+}
+#misc .misc-points-toggle {
+  width: 2.15rem;
+  height: 2.15rem;
+  flex: 0 0 2.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #222;
+  background: rgba(0, 0, 0, 0.025);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#misc .misc-points-toggle:hover {
+  background: rgba(0, 0, 0, 0.055);
+  border-color: rgba(0, 0, 0, 0.24);
+}
+#misc .misc-points-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(51, 195, 240, 0.22);
+}
+#misc .misc-points-toggle-input:checked + .misc-points-trigger .misc-points-toggle {
+  background: rgba(0, 0, 0, 0.075);
+  border-color: rgba(0, 0, 0, 0.28);
+}
+#misc .misc-points-toggle-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+#misc .misc-points-toggle-input:checked + .misc-points-trigger .misc-points-toggle-icon {
+  transform: rotate(90deg);
+}
+#misc .misc-points-toggle-icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+#misc .misc-points-toggle-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#misc .misc-points-panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  transition: max-height 0.26s ease, opacity 0.2s ease, margin-top 0.2s ease;
+}
+#misc .misc-points-toggle-input:checked + .misc-points-trigger + .misc-points-panel {
+  max-height: 1200px;
+  opacity: 1;
+  margin-top: 0.2rem;
 }
 #misc .misc-subsection ul {
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+#misc .misc-subsection:last-child ul:last-child {
+  margin-bottom: 0;
 }
 .cn-xingkai {
   font-family: "SJxingkai-C", "三极行楷简体-粗", "行楷-简", "STXingkaiSC-Light", "STXingkaiSC-Bold", cursive;

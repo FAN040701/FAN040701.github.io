@@ -10,21 +10,66 @@ title: Misc
   {% assign misc_sections = site.data_misc | sort: "section_order" %}
   {% if misc_sections and misc_sections.size > 0 %}
     {% for section in misc_sections %}
+      {% assign section_has_points = false %}
+      {% if section.points and section.points.size > 0 %}
+        {% assign section_has_points = true %}
+      {% endif %}
+      {% assign section_toggle_id = section.section_title | slugify | append: "-toggle" %}
       <div class="misc-subsection">
         <h5>{{ section.section_title }}</h5>
 
         {% if section.paragraphs %}
           {% for paragraph in section.paragraphs %}
-            <p>{{ paragraph }}</p>
+            {% if section_has_points and forloop.last %}
+              <input class="misc-points-toggle-input" type="checkbox" id="{{ section_toggle_id }}">
+              <div class="misc-points-trigger">
+                <p class="misc-points-lead">{{ paragraph }}</p>
+                <label
+                  class="misc-points-toggle"
+                  for="{{ section_toggle_id }}"
+                  aria-label="Expand or collapse {{ section.section_title }} details"
+                  title="Expand or collapse details"
+                >
+                  <span class="misc-points-toggle-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                      <path d="M9 6l6 6-6 6"></path>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+            {% else %}
+              <p>{{ paragraph }}</p>
+            {% endif %}
           {% endfor %}
         {% endif %}
 
-        {% if section.points %}
-          <ul>
-            {% for point in section.points %}
-              <li>{{ point }}</li>
-            {% endfor %}
-          </ul>
+        {% if section_has_points %}
+          {% if section.paragraphs == nil or section.paragraphs.size == 0 %}
+            <input class="misc-points-toggle-input" type="checkbox" id="{{ section_toggle_id }}">
+            <div class="misc-points-trigger">
+              <p class="misc-points-lead">Details</p>
+              <label
+                class="misc-points-toggle"
+                for="{{ section_toggle_id }}"
+                aria-label="Expand or collapse {{ section.section_title }} details"
+                title="Expand or collapse details"
+              >
+                <span class="misc-points-toggle-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M9 6l6 6-6 6"></path>
+                  </svg>
+                </span>
+              </label>
+            </div>
+          {% endif %}
+
+          <div class="misc-points-panel">
+            <ul>
+              {% for point in section.points %}
+                <li>{{ point }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         {% endif %}
       </div>
     {% endfor %}
