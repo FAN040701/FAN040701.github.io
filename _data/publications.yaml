@@ -1,12 +1,12 @@
 papers:
 
-  # ===== 示例论文，按需修改或添加 =====
   # selected: y 表示在"精选"标签页中展示，n 表示只在"全部"中展示
 
   - title: "PASS: probabilistic agentic supernet sampling for interpretable and adaptive chest x-ray reasoning"
     authors: "Yushi Feng, Junye Du, Yingying Hong, <b>Qifan Wang</b>, Lequan Yu<sup class='corresponding-author'>*</sup>"
     venue: "<span style='color: red; font-weight: bold;'>(Oral, Top 5%)</span> AAAI 2026"
     paper_pdf: "https://openreview.net/pdf?id=yzbFiOC7UE"  # 替换为真实路径或 URL
+    preview_image: "/assets/publications/PASS.png"
     # code: "https://github.com/yourusername/repo"   
     selected: y
 
@@ -14,6 +14,7 @@ papers:
     authors: "Yushi Feng<sup>‡</sup>, <b>Qifan Wang<sup>‡</sup></b>, Wang lujing, Liang Peng, Xinxiang Zhao, Qian Niu, Lequan Yu<sup class='corresponding-author'>*</sup>"
     venue: "(Under Review) ICML 2026"
     # paper_pdf: "/assets/publications/paper3/paper.pdf"
+    preview_image: "/assets/publications/RadPro.png"
     # poster: "/assets/publications/paper3/poster.pdf" 
     # code: "https://github.com/StanfordHCI/FeedMonitor"
     selected: y
@@ -22,4 +23,5 @@ papers:
     authors: "Yushi Feng<sup>‡</sup>, Junye Du<sup>‡</sup>, <b>Qifan Wang</b>, Zizhan Ma, Qian Niu, Yutaka Matsuo, Long Feng, Lequan Yu<sup class='corresponding-author'>*</sup>"
     venue: "(Under Review) ECCV 2026"
     # paper_pdf: "https://www.science.org/stoken/author-tokens/ST-3086/full"
+    preview_image: "/assets/publications/CORA.png"
     selected: y
