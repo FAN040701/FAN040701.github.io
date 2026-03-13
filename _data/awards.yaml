@@ -17,6 +17,19 @@ awards:
 
 awards_hidden:
   # Add extra awards here. They will be collapsed by default and shown when expanded.
-  # - date: "2026 Jan"
-  #   title: "Your extra award title"
-  #   org: "Organization"
+  - date: "2023 Dec"
+    title: "First Prize, Puyi Award National College Students English Writing Competition"
+    org: "China Association for International Exchange of Economic and Technical Cooperation"
+  - date: "2021 Sept"
+    title: "First Prize, National High School Physics Competition (Provincial Division)"
+    org: "Chinese Physical Society"
+  - date: "2021 Oct"
+    title: "Second Prize, National High School Mathematics Competition (Provincial Division)"
+    org: "Chinese Mathematical Society"
+  - date: "2021 Sept"
+    title: "Second Prize, National High School Biology Competition (Provincial Division)"
+    org: "Botanical Society & Zoological Society of China "
+  - date: "2020 Oct"
+    title: "Second Prize, National High School Mathematics Competition (Provincial Division)"
+    org: "Chinese Mathematical Society"
+  

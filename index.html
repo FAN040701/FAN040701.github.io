@@ -191,7 +191,7 @@ title: Home
           {% if item.text %}
             {{ item.text }}
           {% else %}
-            {% if item.date %}<strong>{{ item.date }}</strong>{% endif %}{% if item.date and item.title %}: {% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
+            {% if item.date %}<strong>{{ item.date }}</strong>{% endif %}{% if item.date and item.title %}&nbsp;{% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
           {% endif %}
         </li>
       {% endfor %}
@@ -226,7 +226,7 @@ title: Home
             {% if item.text %}
               {{ item.text }}
             {% else %}
-              {% if item.date %}<strong>{{ item.date }}</strong>{% endif %}{% if item.date and item.title %}: {% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
+              {% if item.date %}<strong>{{ item.date }}</strong>{% endif %}{% if item.date and item.title %}&nbsp;{% endif %}{{ item.title }}{% if item.org %}, {{ item.org }}{% endif %}
             {% endif %}
           </li>
         {% endfor %}
