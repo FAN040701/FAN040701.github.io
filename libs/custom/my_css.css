@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SJXingkaiWeb";
+  src: url("/assets/%E4%B8%89%E6%9E%81%E8%A1%8C%E6%A5%B7%E7%AE%80%E4%BD%93-%E7%B2%97.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 .theme-toggle {
   position: fixed;
   top: 1.2rem;
@@ -407,7 +415,7 @@ h4 {
   margin-bottom: 0;
 }
 .cn-xingkai {
-  font-family: "SJxingkai-C", "三极行楷简体-粗", "行楷-简", "STXingkaiSC-Light", "STXingkaiSC-Bold", cursive;
+  font-family: "SJXingkaiWeb", "SJxingkai-C", "三极行楷简体-粗", "行楷-简", "STXingkaiSC-Light", "STXingkaiSC-Bold", cursive;
 }
 .footer {
   text-align: center;
