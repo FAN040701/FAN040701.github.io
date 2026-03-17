@@ -7,7 +7,7 @@ papers:
     venue: "<span style='color: red; font-weight: bold;'>(Oral, Top 5%)</span> AAAI 2026"
     paper_pdf: "https://openreview.net/pdf?id=yzbFiOC7UE"  # 替换为真实路径或 URL
     preview_image: "/assets/publications/PASS.png"
-    # code: "https://github.com/yourusername/repo"   
+    code: "https://github.com/FAN040701/PASS"   
     selected: y
 
   - title: "RadPro: Expert-Aligned Radiology Report Correction via Consensus Preference Learning for Reliable Pedagogical Feedback"
