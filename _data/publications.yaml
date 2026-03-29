@@ -5,7 +5,7 @@ papers:
   - title: "PASS: probabilistic agentic supernet sampling for interpretable and adaptive chest x-ray reasoning"
     authors: "Yushi Feng, Junye Du, Yingying Hong, <b>Qifan Wang</b>, Lequan Yu<sup class='corresponding-author'>*</sup>"
     venue: "<span style='color: red; font-weight: bold;'>(Oral, Top 5%)</span> AAAI 2026"
-    paper_pdf: "https://openreview.net/pdf?id=yzbFiOC7UE"  # 替换为真实路径或 URL
+    paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/40328"  # 替换为真实路径或 URL
     preview_image: "/assets/publications/PASS.png"
     code: "https://github.com/FAN040701/PASS"   
     selected: y
