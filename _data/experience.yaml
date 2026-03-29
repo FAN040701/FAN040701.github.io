@@ -1,5 +1,11 @@
 experiences:
 
+- place: "The University of Hong Kong (HKU)"
+  time: "2026 Sept - 2030 Jun"
+  title: "PhD Student"
+  subtitle: "Institute of Data Science, Infobodied AI Lab"
+  category: "school"
+
 - place: "HKU School of Computing and Data Science"
   time: "Summer 2025"
   title: "HKU CDS Summer Research Internship Program"
