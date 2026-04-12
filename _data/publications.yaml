@@ -8,6 +8,11 @@ papers:
     paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/40328"  # 替换为真实路径或 URL
     preview_image: "/assets/publications/PASS.png"
     code: "https://github.com/FAN040701/PASS"   
+    links:
+      - label: "Paper"
+        url: "https://ojs.aaai.org/index.php/AAAI/article/view/40328"
+      - label: "Code"
+        url: "https://github.com/FAN040701/PASS"
     selected: y
 
   - title: "RadPro: Expert-Aligned Radiology Report Correction via Consensus Preference Learning for Reliable Pedagogical Feedback"
@@ -17,6 +22,7 @@ papers:
     preview_image: "/assets/publications/Radpro.png"
     # poster: "/assets/publications/paper3/poster.pdf" 
     # code: "https://github.com/StanfordHCI/FeedMonitor"
+    # links:
     selected: y
 
   - title: "CORA: Principled Safety for Mobile GUI Agents via Conformal Risk Control"
@@ -24,4 +30,10 @@ papers:
     venue: "(Under Review) ECCV 2026"
     # paper_pdf: "https://www.science.org/stoken/author-tokens/ST-3086/full"
     preview_image: "/assets/publications/CORA.png"
+    paper_pdf: ""
+    code: ""
+    demo: "https://cora-agent.github.io"
+    links:
+      - label: "Demo"
+        url: "https://cora-agent.github.io"
     selected: y

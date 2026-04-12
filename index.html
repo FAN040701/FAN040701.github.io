@@ -85,30 +85,53 @@ title: Home
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
                <div class="paper-buttons">
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-                {% endif %}
+                {% if paper.links and paper.links.size > 0 %}
+                  {% for link in paper.links %}
+                    {% assign link_label = link.label | default: link.name | default: "Link" %}
+                    {% assign link_url = link.url | default: "" | strip %}
+                    {% if link_url != "" %}
+                      {% assign link_href = link_url %}
+                      {% unless link_href contains '://' %}
+                        {% assign link_href = link_href | prepend: site.baseurl %}
+                      {% endunless %}
+                      <a class="button" href="{{ link_href }}" target="_blank">{{ link_label }}</a>
+                    {% else %}
+                      <a class="button" href="#" onclick="alert('Coming soon'); return false;">{{ link_label }}</a>
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  {% if paper.paper_pdf %}
+                    <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+                  {% endif %}
 
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
+                  {% if paper.slides %}
+                    <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+                  {% endif %}
 
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
+                  {% if paper.poster %}
+                    <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                  {% endif %}
 
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
+                  {% if paper.video %}
+                    <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                  {% endif %}
 
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
+                  {% if paper.code %}
+                    <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                  {% endif %}
 
-                {% if paper.data %}
-                  <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-                {% endif %}
+                  {% if paper.demo %}
+                    {% assign demo_href = paper.demo %}
+                    {% unless paper.demo contains '://' %}
+                      {% assign demo_href = paper.demo | prepend: site.baseurl %}
+                    {% endunless %}
+                    <a class="button" href="{{ demo_href }}" target="_blank">Demo</a>
+                  {% endif %}
 
+                  {% if paper.data %}
+                    <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+                  {% endif %}
+                {% endif %}
               </div>
             </div>
           </div>
@@ -147,30 +170,53 @@ title: Home
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
                <div class="paper-buttons">
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-                {% endif %}
+                {% if paper.links and paper.links.size > 0 %}
+                  {% for link in paper.links %}
+                    {% assign link_label = link.label | default: link.name | default: "Link" %}
+                    {% assign link_url = link.url | default: "" | strip %}
+                    {% if link_url != "" %}
+                      {% assign link_href = link_url %}
+                      {% unless link_href contains '://' %}
+                        {% assign link_href = link_href | prepend: site.baseurl %}
+                      {% endunless %}
+                      <a class="button" href="{{ link_href }}" target="_blank">{{ link_label }}</a>
+                    {% else %}
+                      <a class="button" href="#" onclick="alert('Coming soon'); return false;">{{ link_label }}</a>
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  {% if paper.paper_pdf %}
+                    <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+                  {% endif %}
 
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
+                  {% if paper.slides %}
+                    <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+                  {% endif %}
 
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
+                  {% if paper.poster %}
+                    <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                  {% endif %}
 
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
+                  {% if paper.video %}
+                    <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                  {% endif %}
 
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
+                  {% if paper.code %}
+                    <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                  {% endif %}
 
-                {% if paper.data %}
-                  <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-                {% endif %}
+                  {% if paper.demo %}
+                    {% assign demo_href = paper.demo %}
+                    {% unless paper.demo contains '://' %}
+                      {% assign demo_href = paper.demo | prepend: site.baseurl %}
+                    {% endunless %}
+                    <a class="button" href="{{ demo_href }}" target="_blank">Demo</a>
+                  {% endif %}
 
+                  {% if paper.data %}
+                    <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+                  {% endif %}
+                {% endif %}
               </div>
             </div>
           </div>
