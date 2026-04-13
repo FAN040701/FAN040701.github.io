@@ -34,6 +34,8 @@ papers:
     code: ""
     demo: "https://cora-agent.github.io"
     links:
+      - label: "Paper"
+        url: "https://arxiv.org/abs/2604.09155"
       - label: "Demo"
         url: "https://cora-agent.github.io"
     selected: y
