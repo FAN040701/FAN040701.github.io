@@ -25,7 +25,7 @@ papers:
     # links:
     selected: y
 
-  - title: "CORA: Principled Safety for Mobile GUI Agents via Conformal Risk Control"
+  - title: "CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation"
     authors: "Yushi Feng<sup>‡</sup>, Junye Du<sup>‡</sup>, <b>Qifan Wang</b>, Zizhan Ma, Qian Niu, Yutaka Matsuo, Long Feng, Lequan Yu<sup class='corresponding-author'>*</sup>"
     venue: "(Under Review) ECCV 2026"
     # paper_pdf: "https://www.science.org/stoken/author-tokens/ST-3086/full"
