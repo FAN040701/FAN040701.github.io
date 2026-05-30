@@ -15,9 +15,9 @@ papers:
         url: "https://github.com/FAN040701/PASS"
     selected: y
 
-  - title: "RadPro: Expert-Aligned Radiology Report Correction via Consensus Preference Learning for Reliable Pedagogical Feedback"
-    authors: "Yushi Feng<sup>‡</sup>, <b>Qifan Wang<sup>‡</sup></b>, Wang lujing, Liang Peng, Xinxiang Zhao, Qian Niu, Lequan Yu<sup class='corresponding-author'>*</sup>"
-    venue: "(Under Review) ICML 2026"
+  - title: "RadPro: Expert-Aligned Radiology Report Correction via Cross-Examined Preference Learning for Reliable Pedagogical Feedback"
+    authors: "<b>Qifan Wang<sup>‡</sup></b>, Yushi Feng<sup>‡</sup>, Wang lujing<sup>‡</sup>, Xinxiang Zhao, Qian Niu, Liang Peng, Kyongtae T Bae, Lequan Yu<sup class='corresponding-author'>*</sup>"
+    venue: "Under Review"
     # paper_pdf: "/assets/publications/paper3/paper.pdf"
     preview_image: "/assets/publications/Radpro.png"
     # poster: "/assets/publications/paper3/poster.pdf" 
@@ -27,7 +27,7 @@ papers:
 
   - title: "CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation"
     authors: "Yushi Feng<sup>‡</sup>, Junye Du<sup>‡</sup>, <b>Qifan Wang</b>, Zizhan Ma, Qian Niu, Yutaka Matsuo, Long Feng, Lequan Yu<sup class='corresponding-author'>*</sup>"
-    venue: "(Under Review) ECCV 2026"
+    venue: "Under Review"
     # paper_pdf: "https://www.science.org/stoken/author-tokens/ST-3086/full"
     preview_image: "/assets/publications/CORA.png"
     paper_pdf: ""
@@ -38,4 +38,14 @@ papers:
         url: "https://arxiv.org/abs/2604.09155"
       - label: "Demo"
         url: "https://cora-agent.github.io"
+    selected: y
+
+  - title: "GazeAct: A Gaze-Annotated Manipulation Dataset and Gaze-Regularized Action Policies"
+    authors: "Anupan Pani, Yuan Wang, <b>Qifan Wang</b>, Yanchao Yang<sup class='corresponding-author'>*</sup>"
+    venue: "Under Review"
+    # paper_pdf: "/assets/publications/paper3/paper.pdf"
+    preview_image: "/assets/publications/GazeACT.png"
+    # poster: "/assets/publications/paper3/poster.pdf" 
+    # code: "https://github.com/StanfordHCI/FeedMonitor"
+    # links:
     selected: y
