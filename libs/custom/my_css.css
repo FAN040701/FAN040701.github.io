@@ -552,13 +552,31 @@ h4 {
 @media (max-width: 750px) {
   .paper-entry {
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
   .paper-media {
+    flex: 0 0 auto;
     width: 100%;
-    max-width: 360px;
+    max-width: none;
     height: auto;
+    aspect-ratio: auto;
+  }
+
+  .paper-media-link {
+    height: auto;
+  }
+
+  .paper-media img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .paper-media-placeholder {
+    height: auto;
+    min-height: 160px;
     aspect-ratio: 5 / 3;
   }
 
@@ -568,8 +586,9 @@ h4 {
   }
 
   #education .education-item {
-    grid-template-columns: 5rem minmax(0, 1fr);
-    gap: 1rem;
+    grid-template-columns: 4.6rem minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1.4rem 0;
   }
 
   #education .education-item-no-logo {
@@ -577,18 +596,58 @@ h4 {
   }
 
   #education .education-logo-frame {
-    width: 5rem;
-    height: 5.8rem;
+    width: 4.6rem;
+    height: 5.4rem;
+  }
+
+  #education .education-content {
+    overflow-wrap: break-word;
+  }
+
+  #education .education-institution {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+
+  #education .education-degree {
+    margin-top: 0.35rem;
+    font-size: 1.3rem;
+    line-height: 1.45;
   }
 
   #education .education-time {
     display: block;
-    margin-top: 0.2rem;
+    margin-top: 0.35rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    text-align: left;
     white-space: normal;
   }
 
+  #education .education-body {
+    margin-top: 0.6rem;
+  }
+
+  #education .education-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    line-height: 1.5;
+  }
+
+  #education .education-meta-separator {
+    display: none;
+  }
+
+  #education .education-affiliation {
+    display: block;
+  }
+
   #education .education-location {
-    margin-top: 0.25rem;
+    margin-top: 0.45rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    text-align: left;
     white-space: normal;
   }
 
