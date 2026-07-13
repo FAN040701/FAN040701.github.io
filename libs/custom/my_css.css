@@ -216,6 +216,104 @@ h4 {
 #news .news-text {
   color: #222;
 }
+#education .education-list {
+  border-top: 1px solid #e5e5e5;
+}
+#education .education-item {
+  display: grid;
+  grid-template-columns: 6.4rem minmax(0, 1fr);
+  align-items: stretch;
+  gap: 1.5rem;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+#education .education-item-no-logo {
+  grid-template-columns: minmax(0, 1fr);
+}
+#education .education-logo-frame {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 6.4rem;
+  height: 7rem;
+}
+#education .education-logo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+#education .education-content {
+  min-width: 0;
+}
+#education .education-heading,
+#education .education-meta-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#education .education-institution {
+  margin-bottom: 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+#education .education-degree {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  color: #303030;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+#education .education-time {
+  flex: 0 0 auto;
+  color: #666;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: right;
+  white-space: nowrap;
+}
+#education .education-body {
+  margin-top: 0.75rem;
+}
+#education .education-meta {
+  min-width: 0;
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.65;
+}
+#education .education-location {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+  color: #666;
+  font-style: italic;
+  line-height: 1.65;
+  text-align: right;
+  white-space: nowrap;
+}
+#education .education-details {
+  margin: 0.35rem 0 0;
+  color: #666;
+  font-size: 1.35rem;
+  list-style: none;
+}
+#education .education-details li:last-child {
+  margin-bottom: 0;
+}
+#education .education-lab {
+  font-weight: 500;
+}
+#education .education-meta-separator {
+  margin: 0 0.55rem;
+  color: #aaa;
+}
+#education .education-supervisor {
+  color: #777;
+}
 #awards .awards-more-toggle-input {
   position: absolute;
   opacity: 0;
@@ -463,6 +561,37 @@ h4 {
     height: auto;
     aspect-ratio: 5 / 3;
   }
+
+  #education .education-heading,
+  #education .education-meta-row {
+    display: block;
+  }
+
+  #education .education-item {
+    grid-template-columns: 5rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  #education .education-item-no-logo {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #education .education-logo-frame {
+    width: 5rem;
+    height: 5.8rem;
+  }
+
+  #education .education-time {
+    display: block;
+    margin-top: 0.2rem;
+    white-space: normal;
+  }
+
+  #education .education-location {
+    margin-top: 0.25rem;
+    white-space: normal;
+  }
+
 }
 
 html[data-theme="dark"] .button,
@@ -681,6 +810,36 @@ html[data-theme="dark"] #news .news-item {
 html[data-theme="dark"] #news .news-date,
 html[data-theme="dark"] #news .news-text {
   color: #e6edf5;
+}
+
+html[data-theme="dark"] #education .education-item {
+  border-bottom-color: rgba(230, 237, 245, 0.2);
+}
+
+html[data-theme="dark"] #education .education-logo-frame {
+  padding: 0.35rem;
+  border-radius: 4px;
+  background: #fff;
+}
+
+html[data-theme="dark"] #education .education-degree,
+html[data-theme="dark"] #education .education-meta {
+  color: rgba(230, 237, 245, 0.86);
+}
+
+html[data-theme="dark"] #education .education-time,
+html[data-theme="dark"] #education .education-location,
+html[data-theme="dark"] #education .education-details,
+html[data-theme="dark"] #education .education-supervisor {
+  color: rgba(230, 237, 245, 0.72);
+}
+
+html[data-theme="dark"] #education .education-meta-separator {
+  color: rgba(230, 237, 245, 0.38);
+}
+
+html[data-theme="dark"] #education .education-list {
+  border-top-color: rgba(230, 237, 245, 0.2);
 }
 
 html[data-theme="dark"] .paper-media {

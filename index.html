@@ -7,11 +7,11 @@ title: Home
   <h4>Bio</h4>
   <p>
   <!-- 请在这里填写你的研究方向和个人简介 -->
-  I'm a year 4 undergraduate student at the University of Hong Kong (HKU), majoring in Computer Engineering in the Department of Electrical and Computer Engineering (<a href="https://www.eee.hku.hk/" target="_blank">ECE</a>). I'm fortunate to work with the <a href="https://hku-medai.github.io/" target="_blank">HKU MedAI Lab</a>, supervised by <a href="https://yulequan.github.io/" target="_blank">Prof. Lequan Yu</a> and <a href="https://yanchaoyang.github.io/" target="_blank">HKU InfobodiedAI Lab</a>, supervised by <a href="https://yanchaoyang.github.io/" target="_blank">Prof. Yanchao Yang</a>. I also spent a one-semester exchange at the Nanyang Technological University (NTU) in Fall 2024, College of Computing and Data Science (<a href="https://www.ntu.edu.sg/computing" target="_blank">CCDS</a>), where I had the opportunity to collaborate with <a href="https://personal.ntu.edu.sg/boan/" target="_blank">Prof. Bo An</a>'s group.
+  I'm an incoming PhD student at the <a href="https://datascience.hku.hk/" target="_blank">Institute of Data Science</a>, University of Hong Kong (HKU), supervised by <a href="https://yanchaoyang.github.io/" target="_blank">Prof. Yanchao Yang</a> and <a href="https://www.ai.hku.hk/people/academic-staff/mayi" target="_blank">Prof Yi Ma</a>. Before that I also got my bachelor's degree in Computer Engineering from HKU with a First Class Honour.
   </p>
 
   <p>
-  My research interests lie in both the <strong>AI for healthcare</strong> (especially LLM for healthcare) and <strong>embodied AI</strong>. Currently, I'm working on projects related to Human-Scene/Human-Object Interaction.
+  My research interests lie in <strong>3D Vision</strong>, <strong>4D Human/Object Understanding</strong>. I am particularly interested in developing methods for abstracting high-quality multimodal and multidimensional representations from real-world data, and in leveraging such representations to advance embodied AI and world models. Currently, I'm working on projects related to Human-Scene/Human-Object Interaction.
   </p>
 </div>
 
@@ -38,6 +38,64 @@ title: Home
       </div>
     {% endif %}
   </div>
+</div>
+
+<!-- ========== EDUCATION ========== -->
+<div class="docs-section" id="education">
+  <h4>Education</h4>
+
+  {% assign education_items = site.data.education.education %}
+  {% if education_items and education_items.size > 0 %}
+    <div class="education-list">
+      {% for item in education_items %}
+        <article class="education-item{% unless item.logo %} education-item-no-logo{% endunless %}">
+          {% if item.logo %}
+            <div class="education-logo-frame">
+              <img class="education-logo" src="{{ item.logo | prepend: site.baseurl }}" alt="{{ item.logo_alt | default: item.institution }}">
+            </div>
+          {% endif %}
+
+          <div class="education-content">
+            <div class="education-heading">
+              <h5 class="education-institution">{{ item.institution }}</h5>
+              {% if item.time %}<span class="education-time">{{ item.time }}</span>{% endif %}
+            </div>
+            {% if item.degree %}<p class="education-degree">{{ item.degree }}</p>{% endif %}
+
+            <div class="education-body">
+              {% if item.description or item.affiliations and item.affiliations.size > 0 or item.location %}
+                <div class="education-meta-row">
+                  <p class="education-meta">
+                    {% if item.description %}<span>{{ item.description }}</span>{% endif %}
+                    {% if item.affiliations and item.affiliations.size > 0 %}
+                      {% for affiliation in item.affiliations %}
+                        {% if item.description or forloop.first == false %}<span class="education-meta-separator" aria-hidden="true">·</span>{% endif %}
+                        <span class="education-affiliation">
+                          {% if affiliation.lab_url %}<a class="education-lab" href="{{ affiliation.lab_url }}" target="_blank" rel="noopener noreferrer">{{ affiliation.lab }}</a>{% else %}<span class="education-lab">{{ affiliation.lab }}</span>{% endif %}
+                          {% if affiliation.supervisor %}<span class="education-supervisor">({% if affiliation.supervisor_url %}<a href="{{ affiliation.supervisor_url }}" target="_blank" rel="noopener noreferrer">{{ affiliation.supervisor }}</a>{% else %}{{ affiliation.supervisor }}{% endif %})</span>{% endif %}
+                        </span>
+                      {% endfor %}
+                    {% endif %}
+                  </p>
+                  {% if item.location %}<p class="education-location">{{ item.location }}</p>{% endif %}
+                </div>
+              {% endif %}
+
+              {% if item.details and item.details.size > 0 %}
+                <ul class="education-details">
+                  {% for detail in item.details %}
+                    <li>{{ detail }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>Education history will be updated soon.</p>
+  {% endif %}
 </div>
 
 <div class="docs-section" id="publications">
@@ -394,7 +452,8 @@ title: Home
 </div>
 -->
 
-<!-- ========== RESUME ========== -->
+{% comment %}
+<!-- ========== RESUME (currently hidden) ========== -->
 <div class="docs-section" id="resume">
   <h4>Vitæ</h4>
 
@@ -419,6 +478,7 @@ title: Home
     {% endfor %}
   </ul>
 </div>
+{% endcomment %}
 
 <div class="docs-section" id="acknowledgements">
   <h4>Acknowledgements</h4>

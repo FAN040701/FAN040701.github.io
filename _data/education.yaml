@@ -1,0 +1,47 @@
+# Education 板块的数据，页面会按这里的顺序展示。
+# institution 为学校名称；affiliations 中可配置一个或多个 Lab 与 Supervisor。
+education:
+  - institution: "The University of Hong Kong (HKU)"
+    logo: "/assets/education/hku-logo.svg"
+    logo_alt: "The University of Hong Kong shield"
+    time: "2026 Sept - 2030 Jun"
+    location: "Hong Kong, China"
+    degree: "PhD Student"
+    description: "Institute of Data Science"
+    affiliations:
+      - lab: "HKU InfobodiedAI Lab"
+        lab_url: "https://yanchaoyang.github.io/"
+        supervisor: "Prof. Yanchao Yang"
+        supervisor_url: "https://yanchaoyang.github.io/"
+
+  - institution: "The University of Hong Kong (HKU)"
+    logo: "/assets/education/hku-logo.svg"
+    logo_alt: "The University of Hong Kong shield"
+    time: "2022 Sept - 2026 Jun"
+    location: "Hong Kong, China"
+    degree: "BEng in Computer Engineering (First Class Honours)"
+    # description: ""
+    # details:
+    #   - "Grade: First Class Honours"
+    affiliations:
+      - lab: "HKU MedAI Lab"
+        lab_url: "https://hku-medai.github.io/"
+        supervisor: "Prof. Lequan Yu"
+        supervisor_url: "https://yulequan.github.io/"
+      - lab: "HKU InfobodiedAI Lab"
+        lab_url: "https://yanchaoyang.github.io/"
+        supervisor: "Prof. Yanchao Yang"
+        supervisor_url: "https://yanchaoyang.github.io/"
+
+  - institution: "Nanyang Technological University (NTU)"
+    logo: "/assets/education/ntu-logo.svg"
+    logo_alt: "Nanyang Technological University shield"
+    time: "2024 Aug - 2024 Dec"
+    location: "Singapore, Singapore"
+    degree: "Exchange Student in Computer Science"
+    description: "College of Computing and Data Science"
+    affiliations:
+      - lab: "AMI Lab"
+        lab_url: "https://personal.ntu.edu.sg/boan/"
+        supervisor: "Prof. Bo An"
+        supervisor_url: "https://personal.ntu.edu.sg/boan/"
