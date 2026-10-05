@@ -19,7 +19,9 @@ papers:
     authors: "<b>Qifan Wang<sup>‡</sup></b>, Yushi Feng<sup>‡</sup>, Wang lujing<sup>‡</sup>, Xinxiang Zhao, Qian Niu, Liang Peng, Kyongtae T Bae, Lequan Yu<sup class='corresponding-author'>*</sup>"
     venue: "Under Review"
     # paper_pdf: "/assets/publications/paper3/paper.pdf"
-    preview_image: "/assets/publications/Radpro.png"
+    preview_image: "/assets/publications/Radpro-preview.png"
+    preview_link: "/assets/publications/Radpro.pdf"
+    preview_fit: "contain"
     # poster: "/assets/publications/paper3/poster.pdf" 
     # code: "https://github.com/StanfordHCI/FeedMonitor"
     # links:

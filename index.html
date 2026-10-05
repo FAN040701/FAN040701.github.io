@@ -7,7 +7,7 @@ title: Home
   <h4>Bio</h4>
   <p>
   <!-- 请在这里填写你的研究方向和个人简介 -->
-  I'm an incoming PhD student at the <a href="https://datascience.hku.hk/" target="_blank">Institute of Data Science</a>, University of Hong Kong (HKU), supervised by <a href="https://yanchaoyang.github.io/" target="_blank">Prof. Yanchao Yang</a> and <a href="https://www.ai.hku.hk/people/academic-staff/mayi" target="_blank">Prof Yi Ma</a>. Before that I also got my bachelor's degree in Computer Engineering from HKU with a First Class Honour.
+  I'm an incoming PhD student at the <a href="https://www.cds.hku.hk/" target="_blank">School of Computing and Data Science (CDS)</a>, University of Hong Kong (HKU), supervised by <a href="https://yanchaoyang.github.io/" target="_blank">Prof. Yanchao Yang</a> and <a href="https://www.ai.hku.hk/people/academic-staff/mayi" target="_blank">Prof Yi Ma</a>. Before that I also got my bachelor's degree in Computer Engineering from HKU with a First Class Honour.
   </p>
 
   <p>
@@ -117,7 +117,7 @@ title: Home
         <div class="paper">
           <div class="paper-entry">
             {% assign preview_image = paper.preview_image | default: paper.poster_image | default: paper.thumbnail %}
-            <div class="paper-media">
+            <div class="paper-media{% if paper.preview_fit == 'contain' %} paper-media-contain{% endif %}">
               {% if preview_image %}
                 {% assign preview_src = preview_image %}
                 {% unless preview_image contains '://' %}
@@ -202,7 +202,7 @@ title: Home
         <div class="paper">
           <div class="paper-entry">
             {% assign preview_image = paper.preview_image | default: paper.poster_image | default: paper.thumbnail %}
-            <div class="paper-media">
+            <div class="paper-media{% if paper.preview_fit == 'contain' %} paper-media-contain{% endif %}">
               {% if preview_image %}
                 {% assign preview_src = preview_image %}
                 {% unless preview_image contains '://' %}

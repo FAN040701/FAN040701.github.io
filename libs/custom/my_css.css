@@ -117,6 +117,14 @@ h4 {
   object-fit: cover;
   display: block;
 }
+.paper-media-contain,
+.paper-media-contain .paper-media-link {
+  height: auto;
+}
+.paper-media-contain img {
+  height: auto;
+  object-fit: contain;
+}
 .paper-media-placeholder {
   width: 100%;
   height: 100%;
