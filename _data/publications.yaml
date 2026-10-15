@@ -13,7 +13,7 @@ papers:
         url: "https://ojs.aaai.org/index.php/AAAI/article/view/40328"
       - label: "Code"
         url: "https://github.com/FAN040701/PASS"
-    selected: y
+    selected: n
 
   - title: "RadPro: Expert-Aligned Radiology Report Correction via Cross-Examined Preference Learning for Reliable Pedagogical Feedback"
     authors: "<b>Qifan Wang<sup>‡</sup></b>, Yushi Feng<sup>‡</sup>, Wang lujing<sup>‡</sup>, Xinxiang Zhao, Qian Niu, Liang Peng, Kyongtae T Bae, Lequan Yu<sup class='corresponding-author'>*</sup>"
@@ -25,7 +25,7 @@ papers:
     # poster: "/assets/publications/paper3/poster.pdf" 
     # code: "https://github.com/StanfordHCI/FeedMonitor"
     # links:
-    selected: y
+    selected: n
 
   - title: "CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation"
     authors: "Yushi Feng<sup>‡</sup>, Junye Du<sup>‡</sup>, <b>Qifan Wang</b>, Zizhan Ma, Qian Niu, Yutaka Matsuo, Long Feng, Lequan Yu<sup class='corresponding-author'>*</sup>"
