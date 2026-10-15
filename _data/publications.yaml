@@ -40,7 +40,7 @@ papers:
         url: "https://arxiv.org/abs/2604.09155"
       - label: "Demo"
         url: "https://cora-agent.github.io"
-    selected: y
+    selected: n
 
   - title: "GazeAct: A Gaze-Annotated Manipulation Dataset and Gaze-Regularized Action Policies"
     authors: "Anupan Pani, Yuan Wang, <b>Qifan Wang</b>, Yanchao Yang<sup class='corresponding-author'>*</sup>"

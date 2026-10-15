@@ -87,6 +87,13 @@ h4 {
   margin-bottom: 0px; }
 .main-description p {
   margin-bottom: 0px; }
+.main-description .personal-signature {
+  margin-top: 0;
+  color: #666;
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.6;
+}
 .main-description .fa {
   font-size: 22px;
   margin-top: 5px; }
@@ -704,6 +711,16 @@ html[data-theme="dark"] input[type="button"]:focus {
 @media (min-width: 550px) {
   .header {
     margin-top: 5rem; }
+  .header > .row {
+    display: flex;
+    align-items: flex-end;
+  }
+  .header > .row::after {
+    display: none;
+  }
+  .header .u-max-full-width {
+    display: block;
+  }
 }
 
 /* Larger than tablet */
@@ -850,6 +867,10 @@ html[data-theme="dark"] body {
 
 html[data-theme="dark"] {
   color-scheme: dark;
+}
+
+html[data-theme="dark"] .main-description .personal-signature {
+  color: #a9b5c4;
 }
 
 html[data-theme="dark"] a {

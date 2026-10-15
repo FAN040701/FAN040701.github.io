@@ -114,6 +114,9 @@
                 <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
               </span>
             </p>
+            {% if site.data.main_info.signature and site.data.main_info.signature != '' %}
+              <p class="personal-signature">{{ site.data.main_info.signature | escape }}</p>
+            {% endif %}
         </div>
       </div>
     </section>

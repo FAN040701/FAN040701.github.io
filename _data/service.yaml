@@ -10,12 +10,6 @@ teaching:
     institution: "The University of Hong Kong"
     term: "2025 Spring"
 
-# reviewer:
-#   # Example 1: structured fields
-#   - venue: "NeurIPS"
-#     year: 2026
-
-#   # Example 2: add note (optional)
-#   - venue: "Journal Name"
-#     year: 2026
-#     note: "Reviewer"
+reviewer:
+  - venue: "ICLR"
+    year: 2027
